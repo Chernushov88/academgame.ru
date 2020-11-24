@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <title>home</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header class="header">
+  <div class="container">
+    <div class="flex">
+      <a href="/" class="logo">
+        <img src="/img/logo.png" alt="">
+        <span>IT-мастерская <br>для подростков <br>по созданию <br>компьютерных игр</span>
+      </a>
+      <div class="header-btn">
+        <a href="tel:+79134581788" class="phone">+7 913 458 17 88</a>
+        <div class="flex">
+          <a href="#" class="btn">авторизация</a>
+          <!--          <a href="#" class="btn" onclick="showPopup('#autorization')">авторизация</a>-->
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<main class="main">
+  <section class="baner">
+    <img src="/img/baner/baner-bg-3.jpg" alt="">
+    <div class="brain">
+    </div>
+  </section>
+  <section class="why-are-doing">
+    <div class="h3"><span>Зачем мы это делаем?</span></div>
+    <div class="container">
+      <div class="flex">
+        <div class="diagrams">
+          <div class="diagrams-in">
+            <img src="/img/diagrams.png" alt="">
+            <ul>
+              <li class="list-1">
+                <div class="number">60%</div>
+                <p>выпускников <br>не работают <br>по специальности</p></li>
+              <li class="list-2">
+                <div class="number">20%</div>
+                <p>студентов <br>никогда <br>не закончат <br>ВУЗ</p>
+              </li>
+              <li class="list-3">
+                <div class="number">около <span>7,5</span><br>триллионов рублей</div>
+                <p>тратится ежегодно <br>на переподготовку <br>вышедших из <br>вузов студентов </p>
+              </li>
+              <li class="list-4">
+                <div class="text">СУЩЕСТВУЕТ<span>РАЗРЫВ</span></div>
+                <p>между системой <br>образования <br>и современными <br>требованиями <br>рынка</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="why-are-doing-desc">
+          <p>Родители переживают за будущее детей.</p>
+          <p>Дети не знают как проверить себя и сделать осознанный выбор.</p>
+          <p>Работодатели вынуждены переучивать новичков.</p>
+          <p>MindGame - решает эту проблему за счет модульной системы обучения. Каждый модуль длится 36 часов, в котором
+            подростки работают в атмосфере IT-компании под руководством специалистов из сферы GameDev</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="record">
+    <div class="container">
+      <div class="h3"><span>Как записаться на этот курс?</span></div>
+      <form action="" class="form">
+        <ul>
+          <li>
+            <input type="text" placeholder="Ваше имя?">
+          </li>
+          <li><input type="email" placeholder="E-mail"></li>
+          <li><input type="text" placeholder="Телефон?" class="phone"></li>
+          <li><button class="btn">Записаться</button></li>
+        </ul>
+      </form>
+    </div>
+  </section>
+  <section class="module" style="background: url(/img/module-bg.jpg)">
+    <div class="h3"><span>Программа обучения</span></div>
+    <div class="module-in">
+      <ul class="button-list">
+        <li><a href="javascrip:void();" onclick="showPopup('#modal_info', this, '/img/number/0.png', '<div class=\'desc-text\'><p>Профориентационный модуль</p><ul><li>Знакомство с Gamedev</li><li>Определение направления развития</li><li>Прокачка SOFT SKILLS</li></ul></div>')">
+          <img src="/img/number/0_.png" alt="" class="vis">
+          <img src="/img/number/0.png" alt="" class="hide">
+        </a></li>
+        <li class=""><a href="javascrip:void();" onclick="showPopup('#modal_info', this, '/img/number/1.png', '<div class=\'desc-text\'><p>Подростки выбирают одно из направлений GameDev в котором будут совершенствоваться:</p><ul><li>Геймдизайн - создание сценария и механик игры</li><li>Программирование на Unity - написание кода игры и работа с библиотекам</li><li>2D-арт - обучение работе с графическими редакторами</li><li>Project management - обучение работе в команде и управлению проектами</li></ul></div>')">
+          <img src="/img/number/1_.png" alt="" class="vis">
+          <img src="/img/number/1.png" alt="" class="hide">
+        </a></li>
+        <li><a href="javascrip:void();" onclick="showPopup('#modal_info', this, '/img/number/2.png', '<div class=\'desc-text\'><p>Углубляем знания в выбранной специальности:</p><ul><li>Геймдизайн - создание сценария и механик игры</li><li>Программирование на Unity - написание кода игры и работа с библиотекам</li><li>2D-арт - обучение работе с графическими редакторами</li><li>Project management - обучение работе в команде и управлению проектами</li></ul></div>')">
+          <img src="/img/number/2_.png" alt="" class="vis">
+          <img src="/img/number/2.png" alt="" class="hide">
+        </a></li>
+        <li><a href="javascrip:void();" onclick="showPopup('#modal_info', this, '/img/number/3.png', `<div class='desc-text'><ul><li>Командная разработка игры по заданному ТЗ при содействии экспертов</li><li>Проект остается в портфолио студента</li><li>Лучшие команды могут получить гранты на развитие своих игр</li></ul></div>`)">
+          <img src="/img/number/3_.png" alt="" class="vis">
+          <img src="/img/number/3.png" alt="" class="hide">
+        </a>
+        </li>
+        <li><a href="javascrip:void();" onclick="showPopup('#modal_info', this, '/img/number/4.png', `<div class='desc-text'><p>Дополнительный модуль:</p><ul><li>Оффлайн-лагерь в Сочи</li><li>Студенты создают игры в реальном времени</li><li>Запуск лучших игр в производство</li></ul></div>`)">
+          <img src="/img/number/4_.png" alt="" class="vis">
+          <img src="/img/number/4.png" alt="" class="hide">
+        </a>
+        </li>
+      </ul>
+      <div class="h4">Модули</div>
+    </div>
+  </section>
+  <section class="record">
+    <div class="container">
+      <div class="h3"><span>Как записаться на этот курс?</span></div>
+      <form action="" class="form">
+        <ul>
+          <li>
+            <input type="text" placeholder="Ваше имя?">
+          </li>
+          <li><input type="email" placeholder="E-mail"></li>
+          <li><input type="text" placeholder="Телефон?" class="phone"></li>
+          <li><button class="btn">Записаться</button></li>
+        </ul>
+      </form>
+    </div>
+  </section>
+  <section class="lecturer">
+    <div class="container">
+      <div class="h3"><span>Преподаватели и эксперты</span></div>
+      <div class="lecturer-slider">
+        <div class="item">
+          <div class="user">
+            <div class="user-in"><img onclick="showPopup('#popupVideo')" src="/img/user/1.jpg" alt=""></div>
+          </div>
+          <div class="board">
+            <div class="desc">
+              <div class="desc-text">
+                <div class="h4">Александр Гольцев</div>
+                <p>1. 2002 г. — анимационный фильм «Дед, лиса и великан» (по мотивам народных казахских сказок) —
+                  продюсер
+                  2. 2004 г. — художественный фильм «Муж» (драма) ¬— режиссёр, автор сценария
+                  3. 2012 г. — телевизионный сериал «Гейзер» (комедия) — 31 канал — режиссёр, автор сценария, продюсер
+                  4. 2015 г. — телевизионный сериал «История одного отката» (драма) — «7 канал» — автор сценария
+                  5. 2017 г. — художественный фильм «По любви» (комедия, криминал) ¬— режиссёр, автор сценария, продюсер
+                  6. 2019 г. — телевизионный сериал «Дала қырандары» (Степные ястребы) — Агентство «Хабар» — автор
+                  сценария
+                  7. 2020 г. — художественный фильм «На старте» (драма, спорт) ¬— автор сценария.</p>
+              </div>
+            </div>
+            <a href="#" class="play" onclick="showPopup('#popupVideo')"><img src="/img/play.png" alt=""></a>
+          </div>
+        </div>
+        <div class="item">
+          <div class="user">
+            <div class="user-in"><img src="/img/user/2.jpg" alt=""></div>
+          </div>
+
+          <div class="board">
+            <div class="desc">
+              <div class="desc-text">
+                <div class="h4">Ольга</div>
+                <p>Вот уже более шести лет под именем Helga Wojik я работаю с зарубежными издательствами из США, Канады,
+                  Греции, Мексики.
+                  За это время нарисовано более тысячи коллекционных скетч карточек по франшизам:
+                  Marvel и DC Comics, Игра престолов, Ходячие мертвецы, Cтар Трек и другие.
+                  https://www.artstation.com/helgawojik артстейшн
+                  www.helgawojik.com сайт общий
+                  http://abbarr.helgawojik.com/ сайт книжки</p>
+              </div>
+            </div>
+            <a href="javascript:void(0);" class="play"><img src="/img/play.png" alt=""></a>
+          </div>
+        </div>
+        <div class="item">
+          <div class="user">
+            <div class="user-in"><img onclick="showPopup('#popupVideo')" src="/img/user/3.jpg" alt=""></div>
+          </div>
+          <div class="board">
+            <div class="desc">
+              <div class="desc-text">
+                <div class="h4">Михаил Аронов - 3</div>
+                <p></p>
+              </div>
+            </div>
+            <a href="javascript:void(0);" class="play" onclick="showPopup('#popupVideo')">
+              <img src="/img/play.png" alt=""></a>
+          </div>
+        </div>
+        <div class="item">
+          <div class="user">
+            <div class="user-in"><img src="/img/user/4.jpg" alt=""></div>
+          </div>
+          <div class="board">
+            <div class="desc">
+              <div class="desc-text">
+                <div class="h4">Михаил Аронов - 4</div>
+                <p></p>
+              </div>
+            </div>
+            <a href="javascript:void(0);" class="play"><img src="/img/play.png" alt=""></a>
+          </div>
+        </div>
+        <div class="item">
+          <div class="user">
+            <div class="user-in"><img src="/img/user/5.jpg" alt=""></div>
+          </div>
+          <div class="board">
+            <div class="desc">
+              <div class="desc-text">
+                <div class="h4">Михаил Аронов - 4</div>
+                <p></p>
+              </div>
+            </div>
+            <a href="javascript:void(0);" class="play"><img src="/img/play.png" alt=""></a>
+          </div>
+        </div>
+        <div class="item">
+          <div class="user">
+            <div class="user-in"><img src="/img/user/6.jpg" alt=""></div>
+          </div>
+          <div class="board">
+            <div class="desc">
+              <div class="desc-text">
+                <div class="h4">Михаил Аронов - 4</div>
+                <p></p>
+              </div>
+            </div>
+            <a href="javascript:void(0);" class="play"><img src="/img/play.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="container">
+    <a href="/" class="logo"><img src="/img/logo-footer.png" alt=""></a>
+  </div>
+</footer>
+
+<div class="popup" id="modal_info">
+  <div class="popup-number" id="img"><img src="/img/number/0.png" alt=""></div>
+  <div class="popup-in">
+    <div class="desc"></div>
+    <a href="#" class="btn" onclick="hidePopup('#modal_info')"><img src="/img/close.png" alt=""></a>
+  </div>
+</div>
+<div class="popup" id="popupVideo">
+  <div class="popup-in">
+    <iframe class="desc" src="https://www.youtube.com/embed/NtE1gVsH09A" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    <a href="#" class="btn" onclick="hidePopup('#popupVideo')"><img src="/img/close.png" alt=""></a>
+  </div>
+</div>
+<!--<div class="popup" id="autorization">-->
+<!--  <div class="popup-form">-->
+<!--    <div class="h3">Как записаться на этот курс?</div>-->
+<!--    <form action="" class="form">-->
+<!--      <ul>-->
+<!--        <li>-->
+<!--          <input type="text" placeholder="Ваше имя?">-->
+<!--        </li>-->
+<!--        <li><input type="text" placeholder="E-mail"></li>-->
+<!--        <li><input type="text" placeholder="Телефон?"></li>-->
+<!--        <li>-->
+<!--          <button class="btn">Записаться</button>-->
+<!--        </li>-->
+<!--      </ul>-->
+<!--    </form>-->
+<!--  </div>-->
+<!--</div>-->
+<div class="darken"></div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
