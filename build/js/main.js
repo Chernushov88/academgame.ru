@@ -13,7 +13,7 @@
 $(function ($) {
   $(".phone").mask("+7(999) 999-99-99");
   $('.lecturer-slider').slick({
-    infinite: false,
+    infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
@@ -21,7 +21,7 @@ $(function ($) {
     speed: 500,
     autoplay: true,
     autoplaySpeed: 100000,
-    fade: false,
+    fade: true,
     adaptiveHeight: true,
     prevArrow:"<button class='slick-prev'><img src='img/prev.png' alt=\"\"></button>",
     nextArrow:"<button class='slick-next'><img src='img/next.png' alt=\"\"></button>"
@@ -58,9 +58,18 @@ function hidePopup(target) {
     e.classList.remove('active')
   })
 }
+function touchMenu(elem, menu) {
+  $(elem).toggleClass('active');
+  $(menu).toggleClass('active');
+  $('.menuLayer').toggleClass('active');
+  //addIconsMenu(menu);
+}
 window.addEventListener('load', function () {
   let darken = document.querySelector('.darken')
   let list = document.querySelectorAll('.button-list li a')
+  let menuLayer = document.querySelector('.menuLayer')
+  let touch_menu = document.querySelector('.touch_menu')
+  let menu = document.querySelector('#menu')
 
   darken.addEventListener('click', function (e) {
     console.log(e)
@@ -69,8 +78,14 @@ window.addEventListener('load', function () {
       e.classList.remove('open')
     })
     darken.classList.remove('active')
+    menuLayer.classList.remove('active')
     list.forEach(e=>{
       e.classList.remove('active')
     })
+  });
+  menuLayer.addEventListener('click', function (e) {
+    menuLayer.classList.remove('active')
+    menu.classList.remove('active')
+    touch_menu.classList.remove('active')
   });
 })

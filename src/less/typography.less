@@ -12,15 +12,21 @@ body {
   font-display: swap;
   font-style: normal;
   font-weight: normal;
-  line-height: 1.45em;
-  font-size: @sizeBasik;
-  background: #fff;
-  color: @colorBasik;
+  line-height: 1.3em;
+  font-size: 30px;
+  background: #172436;
+  color: #fff;
   .lg-block({
-    //font-size: @sizeBasik - 5;
+    font-size: 26px;
   });
   .md-block({
-    //font-size: @sizeBasik - 5;
+    font-size: 22px;
+  });
+  .sm-block({
+    font-size: 18px;
+  });
+  .xs-block({
+    font-size: 16px;
   });
 }
 
@@ -450,11 +456,11 @@ a {
   justify-content: center;
   align-items: center;
   .transition(1s);
-  height: 40px;
+  height: 50px;
   padding: 0 20px;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: @sizeBasik;
+  font-size: 20px;
   color: #fff;
   .gradient(#364967, #688dc2);
   box-shadow: 0px 4px 4px rgba(0, 0, 1px, 1px, #688dc2);
@@ -462,9 +468,16 @@ a {
   span{
     margin-left: 7px;
   }
-  object{
-    //.transition(1s);
-  }
+  .lg-block({
+    font-size: 18px;
+  });
+  .md-block({
+    font-size: 16px;
+  });
+  .sm-block({
+    height: 45px;
+    font-size: 14px;
+  });
 
   &:hover {
     opacity: 1;
@@ -555,40 +568,35 @@ h1 {
   });
 }
 
+
 h3, .h3 {
   position: relative;
   margin: 0px 0 30px;
   line-height: 1;
   text-align: center;
   font-weight: normal;
-  font-size: 44px;
+  font-size: 60px;
   color:@colorDark;
   span{
     position: relative;
     display: inline-block;
+    .section_box_shadow();
     &:after{
-      content: '';
-      position: absolute;
-      left: 0;
       top: 150%;
-      width: 100%;
-      height: 2px;
-      box-shadow: 0px 0px 9px 6px rgba(11, 184, 239, 0.5);
-      background: #0bb8ef;
-      background: #00c6ff;
+      bottom: auto;
     }
   }
   .lg-block({
-    font-size: 40px;
+    font-size: 50px;
   });
   .md-block({
-    font-size: 32px;
+    font-size: 40px;
   });
   .sm-block({
     font-size: 28px;
   });
   .xs-block({
-    font-size: 20px;
+    font-size: 24px;
   });
 }
 
@@ -622,11 +630,20 @@ h4, .h4 {
   outline: 0px solid transparent;
 }
 h5, .h5 {
-  margin: 0 0 15px;
-  line-height: 1;
-  font-size: @sizeBasik - 1;
+  margin: 0 ;
+  line-height: 1.35;
+  font-size: 36px;
   .lg-block({
-    font-size: @sizeBasik - 6;
+    font-size: 30px;
+  });
+  .md-block({
+    font-size: 25px;
+  });
+  .sm-block({
+    font-size: 20px;
+  });
+  .xs-block({
+    font-size: 18px;
   });
   color: #fff;
 }
